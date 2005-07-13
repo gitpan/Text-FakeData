@@ -1,0 +1,24 @@
+#!/usr/bin/perl -w
+use Text::FakeData;
+use Getopt::Long;
+
+my $faker = Text::FakeData->new();
+
+my $help = 0;
+my @methods = $faker->methods;
+my @todo = ();
+GetOptions(
+	'help|h'	=> sub { print <DATA> },
+	'datatypes'	=> sub { print join("\n",@methods) },
+);
+unless(@ARGV) { print <DATA>; exit; }
+
+print join(' ',map { $faker->$_() } @ARGV)."\n";
+
+__END__
+Usage: fakedata [options] datatypes...
+
+  Available Options:
+    --help          Show help information
+    --datatypes     List the available datatypes
+

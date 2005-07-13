@@ -1,0 +1,21 @@
+Changes
+fakedata
+lib/Text/FakeData.pm
+lib/Text/FakeData/Company.pm
+lib/Text/FakeData/DateTime.pm
+lib/Text/FakeData/Internet.pm
+lib/Text/FakeData/Name.pm
+lib/Text/FakeData/PhoneNumber.pm
+lib/Text/FakeData/StreetAddress.pm
+Makefile.PL
+MANIFEST
+README
+t/fakedata.t
+t/Text-FakeData-Company.t
+t/Text-FakeData-DateTime.t
+t/Text-FakeData-Internet.t
+t/Text-FakeData-Name.t
+t/Text-FakeData-PhoneNumber.t
+t/Text-FakeData-StreetAddress.t
+t/Text-FakeData.t
+META.yml                                 Module meta-data (added by MakeMaker)
